@@ -1,0 +1,15 @@
+My Strategy:
+A reminder for my game, Player A is always the RandomPlayer, Player B is always the WinningPlayer.
+This strategy uses the long chains generated in the game to fill in many boxes in a row.
+Using this strategy it identifies a chain header and then a chain. I considered implementing the complex
+rules described in Elwyn Berlekamp's youtube video, but decided that the complexity of implementing
+those rules was too much for the scope and time frame alloted for this project.
+
+You can tell this strategy is working because you can see player B start filling in one long chain of boxes.
+It looks like a snake working its way across the board. It should be noted that this strategy decreases 
+in effectiveness as the board gets smaller. Boards with less than 9 boxes total render the strategy nearly useless.
+At 9 boxes around 75% of games will be won, at 16 boxes and greater around 96% or greater of games will be won.
+
+I implemented many other updates from my part 1 project. These updates were largely about efficiencies in the code,
+so as to allow the code to run faster despite the increased amount of math being used in this code. I also updated
+the code so that it makes moves using row and column indexes instead of connection between numbers.
